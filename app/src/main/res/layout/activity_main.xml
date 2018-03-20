@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.henriquecarvalho.testedominantcolor.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/imageWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:src="@drawable/wallpaper"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/vibrantView"
+        style="@style/textStyle"
+        android:text="@string/vibrant" />
+
+    <TextView
+        android:id="@+id/vibrantLightView"
+        style="@style/textStyle"
+        android:text="@string/vibrant_light" />
+
+    <TextView
+        android:id="@+id/vibrantDarkView"
+        style="@style/textStyle"
+        android:text="@string/vibrant_dark" />
+
+    <TextView
+        android:id="@+id/mutedView"
+        style="@style/textStyle"
+        android:text="@string/muted" />
+
+    <TextView
+        android:id="@+id/mutedLightView"
+        style="@style/textStyle"
+        android:text="@string/muted_light" />
+
+    <TextView
+        android:id="@+id/mutedDarkView"
+        style="@style/textStyle"
+        android:text="@string/muted_dark" />
+
+</LinearLayout>
